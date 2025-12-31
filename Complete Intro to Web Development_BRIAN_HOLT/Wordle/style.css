@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+@keyframes red-box {
+  10% {
+    border-color: #ff0000;
+  }
+  100% {
+    border-color: #ccc;
+  }
+}
+.win {
+  animation: rainbow 5s infinite;
+}
+
+.wordle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333;
+  border-bottom: 2px solid #333;
+  padding: 15px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.loading {
+  font-size: 40px;
+  transform: rotate(12deg);
+  animation: spin 1.5s linear infinite;
+  margin: 5px;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rainbow {
+  10% {
+    background-color: white;
+  }
+  10% {
+    background-color: yellow;
+  }
+  10% {
+    background-color: yellowgreen;
+  }
+  12% {
+    background-color: green;
+  }
+  10% {
+    background-color: blue;
+  }
+  10% {
+    background-color: blueviolet;
+  }
+  10% {
+    background-color: violet;
+  }
+  10% {
+    background-color: pink;
+  }
+  10% {
+    background-color: orange;
+  }
+}
+
+.invalid {
+  animation: red-box 2s;
+}
+
+.close {
+  background-color: goldenrod;
+  color: white;
+}
+
+.wrong {
+  background-color: #888;
+  color: white;
+}
+
+.correct {
+  background-color: darkgreen;
+  color: white;
+}
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 10px;
+}
+
+.board-letter {
+  height: 45px;
+  width: 45px;
+  border: 3px solid #ccc;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  font-weight: bold;
+}
