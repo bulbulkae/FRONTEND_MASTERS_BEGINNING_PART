@@ -9,9 +9,14 @@
   --corners: 24px 0;
   --corners-small: 10px 0;
   --base-font-size: 1rem;
+  --ld-bkgd: light-dark(var(--platinum), var(--charcoal));
+  --ld-text: light-dark(var(--onyx), var(--white));
+  --ld-projects: light-dark(var(--white), #2e313d);
+  --ld-blue: light-dark(var(--windsurfing), #6dadd0);
 }
 html {
   box-sizing: border-box;
+  color-scheme: light dark;
 }
 *,
 *::before,
@@ -21,8 +26,8 @@ html {
 body {
   font-size: var(--base-font-size);
   font-family: 'Inter', sans-serif;
-  background-color: var(--platinum);
-  color: var(--onyx);
+  background-color: var(--ld-bkgd);
+  color: var(--ld-text);
 }
 
 .wrapper {
@@ -40,7 +45,7 @@ h2 {
   margin: 0;
   font-size: var(--base-font-size);
   text-transform: uppercase;
-  color: var(--windsurfing);
+  color: var(--ld-blue);
   letter-spacing: 0.25em;
 }
 
@@ -53,7 +58,7 @@ p {
 }
 
 a {
-  color: var(--windsurfing);
+  color: var(--ld-blue);
 }
 
 a:hover {
@@ -80,7 +85,7 @@ ul svg {
   height: 36px;
 }
 .social {
-  fill: var(--windsurfing);
+  fill: var(--ld-blue);
 }
 
 .social:hover {
@@ -137,7 +142,7 @@ section h3 {
 }
 
 .contact-list .social {
-  fill: black;
+  fill: var(--ld-blue);
 }
 
 .contact-list .social:hover {
@@ -151,7 +156,7 @@ main {
 }
 
 .project {
-  background-color: var(--white);
+  background-color: var(--ld-projects);
   padding: 3rem;
   border-radius: var(--corners);
 
@@ -181,7 +186,7 @@ main {
   color: var(--white);
   padding: 0.5rem;
   border-radius: var(--corners-small);
-  font-size: calc(--base-font-size) * 0.85;
+  font-size: calc(var(--base-font-size)) * 0.85;
 }
 
 .project img {
@@ -250,7 +255,7 @@ main {
     grid-row: auto;
   }
 
-  .project ul{
+  .project ul {
     justify-content: flex-start;
   }
 }
