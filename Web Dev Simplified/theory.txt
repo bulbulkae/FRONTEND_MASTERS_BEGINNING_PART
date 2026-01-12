@@ -1,0 +1,29 @@
+download HTML file; 
+read the file line by line
+build out the Document Object Model DOM (represents structure of the page)
+render the page to user
+
+
+hoisting - moving to up functions so everywhere we can get access to them.
+arrow functions actually can not be hoisted as functions because they are declared "const/let"
+words "const/let" are not be hoisted
+
+In JavaScript, the var keyword has function scope or global scope, but notably, it does not have block scope. NEVER USE VAR
+
+Type Coercion - converting one data type to another.
+
+NaN is not = to NaN
+NaN = smthg always FALSE
+but isNaN(2) is false and isNaN('hi) returns true
+NaN typeof NUMBER
+
+arr is a collection/list of data
+
+object is collection of data that all references one thing
+
+
+
+
+
+pass quiz 
+    Objects
