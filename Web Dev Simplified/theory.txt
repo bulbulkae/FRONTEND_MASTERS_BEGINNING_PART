@@ -20,6 +20,3 @@ NaN typeof NUMBER
 arr is a collection/list of data
 
 object is collection of data that all references one thing
-
-pass quiz 
-    Objects

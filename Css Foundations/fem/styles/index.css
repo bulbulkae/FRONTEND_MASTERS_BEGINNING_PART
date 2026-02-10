@@ -1,0 +1,46 @@
+@import './base.css';
+
+.home .main__heading {
+  font-size: 128px;
+  font-weight: bold;
+}
+
+.home .main__sub-heading {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.home .menu path {
+  fill: var(--color-text-on-primary);
+}
+
+.home .close path {
+  fill: var(--color-text-on-primary);
+}
+@media (max-width: 1000px) {
+  .home .main__heading {
+    font-size: 50px;
+  }
+  .home .main__sub-heading {
+    font-size: 35px;
+    margin-top: 25px;
+  }
+
+  .main {
+    padding: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .home .main__heading {
+    font-size: 36px;
+  }
+  .home .main__sub-heading {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  .main {
+    padding: 50px;
+  }
+}

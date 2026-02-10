@@ -1,0 +1,43 @@
+https://github.com/emmabostian/fem-css-foundations
+
+CSS - cascading stylesheets
+
+css1: 1994-96
+css2: 1996-98
+css3: 1998-2012
+
+1. browser loads html
+2. converts html to the DOM
+3. fetches linked resources
+4. browser parses CSS 
+5. render tree is laid out
+6. UI is painted
+
+
+Em - related to parent size
+    html {
+        font-size: 16px;
+    }
+
+    div{
+        font-size: 2em; 16px*2em = 32px
+    }
+
+    p{
+        font-size: 2em; 32px*2em = 64px
+    }
+
+Rem - relative to the root
+     html {
+        font-size: 16px;
+    }
+
+    div{
+        font-size: 2rem; 16px*2rem = 32px
+    }
+
+    p{
+        font-size: 2rem; 16px*2rem = 32px
+    }
+
+https://cssgrid-generator.netlify.app/
