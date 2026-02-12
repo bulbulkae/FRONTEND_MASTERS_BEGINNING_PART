@@ -1,0 +1,18 @@
+JS:
+    language
+    modify with html
+    website
+    language of the web
+    browser
+    manipulating web page
+    makes website interacive
+    node.js - server     
+
+JS changes DOM → browser re-renders
+Browser changes DOM (user input) → JS sees it
+
+DOM (Document Object Model) — a live tree of objects created by the browser from HTML, which JavaScript uses to read and change the page.
+
+
+NodeList может быть static или live и поддерживает forEach.
+HTMLCollection всегда live и содержит только HTML элементы.
